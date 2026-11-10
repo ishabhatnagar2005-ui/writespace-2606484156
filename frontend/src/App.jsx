@@ -7,6 +7,8 @@ import { ProtectedRoute } from './components/ProtectedRoute.jsx';
 import LandingPage from './pages/LandingPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
+import Home from './pages/Home.jsx';
+import ReadBlog from './pages/ReadBlog.jsx';
 import { getSession } from './utils/auth.js';
 
 /** Render the existing unknown-address content without inventing protected pages. */
@@ -44,7 +46,23 @@ export default function App() {
             </ProtectedRoute>
           }
         />
-        {['/blogs', '/blog/:id', '/write', '/edit/:id'].map((path) => (
+        <Route
+          path="/blogs"
+          element={
+            <ProtectedRoute session={session}>
+              <Home session={session} />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/blog/:id"
+          element={
+            <ProtectedRoute session={session}>
+              <ReadBlog session={session} />
+            </ProtectedRoute>
+          }
+        />
+        {['/write', '/edit/:id'].map((path) => (
           <Route
             key={path}
             path={path}
