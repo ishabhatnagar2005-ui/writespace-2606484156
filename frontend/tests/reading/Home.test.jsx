@@ -50,7 +50,7 @@ describe('Home', () => {
     expect(screen.getByText('Date unavailable')).toBeInTheDocument();
     expect(container.querySelector('img')).toBeNull();
   });
-  it.each(['user', 'admin'])('wires %s list to reader while write/edit remain guarded fallbacks', async (role) => {
+  it.each(['user', 'admin'])('wires %s list to the real reader and writing form', async (role) => {
     setSession({ ...session, role });
     savePosts([{ id: 'local', title: 'Local note', content: 'Full body', createdAt: '2026-11-01', authorName: 'Writer' }]);
     render(<MemoryRouter initialEntries={['/blogs']}><App /></MemoryRouter>);
@@ -58,6 +58,9 @@ describe('Home', () => {
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Local note');
     await userEvent.setup().click(screen.getByRole('link', { name: 'Back to blogs' }));
     await userEvent.setup().click(screen.getByRole('link', { name: 'Write a blog' }));
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Page not found');
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Write a blog');
+    expect(screen.getByRole('textbox', { name: 'Title', exact: true })).toHaveValue('');
+    expect(screen.getByRole('textbox', { name: 'Content', exact: true })).toHaveValue('');
+    expect(screen.getByRole('button', { name: 'Publish blog' })).toBeInTheDocument();
   });
 });

@@ -1,8 +1,7 @@
 /** Start a production preview for isolated browser journeys. */
 import { defineConfig, devices } from '@playwright/test';
-import { loadEnv } from 'vite';
 
-const env = { ...loadEnv('test', process.cwd(), ''), ...process.env };
+const env = process.env;
 const host = env.VITE_PREVIEW_HOST || '127.0.0.1';
 const port = Number(env.VITE_PREVIEW_PORT || 4173);
 const baseURL = env.E2E_BASE_URL || `http://${host}:${port}`;

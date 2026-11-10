@@ -45,6 +45,8 @@ async function seed(page, session = null, records = posts) {
 /** Enter through login controls, then navigate only through the app's links. */
 async function login(page) {
   await page.goto('/');
+  const mobileMenu = page.getByRole('button', { name: 'Open navigation' });
+  if (await mobileMenu.isVisible()) await mobileMenu.click();
   await page.getByRole('link', { name: 'Log in', exact: true }).click();
   await page.getByLabel('Username', { exact: true }).fill(account.username);
   await page.getByLabel('Password', { exact: true }).fill(account.password);
@@ -73,6 +75,15 @@ test('login to full ordered list to safe reader, then reload and return through 
   await page.reload();
   expect(await body.textContent()).toBe(posts[1].content);
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('writespace_session')))).toEqual(identity);
+  await page.getByRole('link', { name: 'Back to blogs', exact: true }).click();
+  await expect(page.getByRole('heading', { level: 3 })).toHaveCount(4);
+  await page.getByRole('heading', { level: 3, name: 'Browser note 3', exact: true })
+    .getByRole('link', { name: 'Browser note 3', exact: true }).click();
+  await expect(page).toHaveURL(/\/blog\/reading-3$/);
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(posts[3].title);
+  expect(await body.textContent()).toBe(posts[3].content);
+  await expect(page.locator('article time')).toHaveAttribute('datetime', posts[3].createdAt);
+  await expect(page.getByRole('article')).toContainText(account.displayName);
   await page.getByRole('link', { name: 'Back to blogs', exact: true }).click();
   await expect(page.getByRole('heading', { level: 3 })).toHaveCount(4);
   await page.screenshot({ path: testInfo.outputPath('reading-list.png'), fullPage: true });

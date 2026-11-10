@@ -1,7 +1,7 @@
 /** Show browser-local oversight and explicit post management for Admins. */
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { StatCard } from '../components/StatCard.jsx';
 import { getSession, isValidSession } from '../utils/auth.js';
 import { getPosts, getUsers, savePosts } from '../utils/storage.js';
@@ -13,8 +13,9 @@ import { getPosts, getUsers, savePosts } from '../utils/storage.js';
  *   Oversight page or role-appropriate redirect.
  */
 export default function AdminDashboard({ session = null }) {
+  const navigate = useNavigate();
   const [posts, setPosts] = useState(() => getPosts());
-  const [users, setUsers] = useState(() => getUsers());
+  const [users] = useState(() => getUsers());
   const [error, setError] = useState('');
   if (!isValidSession(session)) return <Navigate to="/login" replace />;
   if (session.role !== 'admin') return <Navigate to="/blogs" replace />;
@@ -38,8 +39,7 @@ export default function AdminDashboard({ session = null }) {
     }
     try {
       savePosts(current.filter((post) => post?.id !== id));
-      setPosts(getPosts());
-      setUsers(getUsers());
+      navigate('/blogs');
     } catch {
       setError('Could not delete this blog. Your changes were not saved.');
     }

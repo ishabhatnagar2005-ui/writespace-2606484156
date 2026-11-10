@@ -84,7 +84,8 @@ describe('App account wiring', () => {
     setSession(reader);
     render(<MemoryRouter initialEntries={[path]}><App /><Location /></MemoryRouter>);
     expect(screen.getByLabelText('Current route')).toHaveTextContent('/blogs');
-    expect(screen.getByRole('heading')).toHaveTextContent('Page not found');
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Blogs');
+    expect(screen.getByText('No blogs yet. Be the first to write one!')).toBeInTheDocument();
   });
   it('keeps genuine unknown fallback public and malformed session closed', () => {
     localStorage.setItem('writespace_session', '{bad');

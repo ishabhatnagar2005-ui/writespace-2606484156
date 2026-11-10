@@ -73,8 +73,8 @@ export default {
   },
   plugins: [plugin(({ addBase, addComponents, theme }) => {
     addBase({
-      body: { margin: '0', backgroundColor: theme('colors.background'), color: theme('colors.foreground'), fontFamily: theme('fontFamily.sans').join(', ') },
-      'h1, h2, h3, h4': { fontFamily: theme('fontFamily.display').join(', '), fontWeight: '400' },
+      body: { margin: '0', backgroundColor: theme('colors.background'), color: theme('colors.foreground'), fontFamily: theme('fontFamily.sans') },
+      'h1, h2, h3, h4': { fontFamily: theme('fontFamily.display'), fontWeight: '400' },
       'a, button, input, select, textarea': { touchAction: 'manipulation' },
       ':focus-visible': { outline: `2px solid ${theme('colors.ring')}`, outlineOffset: '4px' },
       '::selection': { backgroundColor: theme('colors.avatar-user-bg'), color: theme('colors.foreground') },

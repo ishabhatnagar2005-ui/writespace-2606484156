@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it, vi } from 'vitest';
 import AdminDashboard from '../../src/pages/AdminDashboard.jsx';
+import Home from '../../src/pages/Home.jsx';
 import { getPosts, savePosts, saveUsers } from '../../src/utils/storage.js';
 import { setSession } from '../../src/utils/auth.js';
 
@@ -16,7 +17,7 @@ function mount(session = admin) {
       <Routes>
         <Route path="/admin" element={<AdminDashboard session={session} />} />
         <Route path="/login" element={<p>Login gate</p>} />
-        <Route path="/blogs" element={<p>Blogs gate</p>} />
+        <Route path="/blogs" element={<Home session={session} />} />
         <Route path="/users" element={<p>Accounts destination</p>} />
         <Route path="/write" element={<p>Write destination</p>} />
         <Route path="/blog/:id" element={<p>Read destination</p>} />
@@ -51,7 +52,8 @@ describe('AdminDashboard', () => {
   });
   it.each([null, { ...admin, displayName: '' }, { ...admin, role: 'user' }])('rejects invalid/nonAdmin identity %o', (session) => {
     mount(session);
-    expect(screen.getByText(session?.role === 'user' ? 'Blogs gate' : 'Login gate')).toBeInTheDocument();
+    if (session?.role === 'user') expect(screen.getByRole('heading', { name: 'Blogs', exact: true })).toBeInTheDocument();
+    else expect(screen.getByText('Login gate')).toBeInTheDocument();
     expect(screen.queryByText('Total posts')).not.toBeInTheDocument();
   });
   it('falls back on collection read exceptions without writing', () => {
@@ -60,34 +62,52 @@ describe('AdminDashboard', () => {
     expect(screen.getByText('No posts yet.')).toBeInTheDocument();
     expect(within(screen.getByText('Total users').parentElement).getByText('1')).toBeInTheDocument();
   });
-  it('cancellation preserves the full collection and successful deletion re-reads current posts', async () => {
+  it('cancellation stays on dashboard and successful deletion routes to blogs with current remaining posts', async () => {
     savePosts(posts);
     setSession(admin);
     mount();
     vi.spyOn(window, 'confirm').mockReturnValue(false);
     await userEvent.setup().click(screen.getByRole('button', { name: 'Delete Post 6' }));
     expect(getPosts()).toEqual(posts);
+    expect(screen.getByRole('heading', { name: 'Admin dashboard' })).toBeInTheDocument();
     const newer = { ...posts[0], id: 'new', title: 'New concurrent post' };
     savePosts([...posts, newer]);
     window.confirm.mockReturnValue(true);
     await userEvent.setup().click(screen.getByRole('button', { name: 'Delete Post 6' }));
     expect(getPosts()).toEqual([...posts.slice(0, 6), newer]);
-    expect(within(screen.getByText('Total posts').parentElement).getByText('7')).toBeInTheDocument();
-    expect(screen.queryByRole('button', { name: 'Delete Post 6' })).not.toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Blogs', exact: true })).toBeInTheDocument();
+    const listing = screen.getByRole('region', { name: 'Blog posts' });
+    expect(within(listing).getAllByRole('article')).toHaveLength(7);
+    for (const post of [...posts.slice(0, 6), newer]) {
+      expect(within(listing).getByRole('link', { name: post.title, exact: true })).toBeInTheDocument();
+    }
+    expect(screen.queryByRole('link', { name: 'Post 6', exact: true })).not.toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'Admin dashboard' })).not.toBeInTheDocument();
   });
-  it.each(['missing', 'ownership', 'session', 'write'])('rejects %s deletion without false success', async (failure) => {
+  it.each(['missing', 'ownership', 'identity', 'session', 'read', 'write'])('rejects %s deletion without false success', async (failure) => {
     savePosts(posts);
     setSession(admin);
     mount();
     vi.spyOn(window, 'confirm').mockImplementation(() => {
       if (failure === 'missing') savePosts(posts.slice(0, 6));
       if (failure === 'ownership') setSession({ ...admin, role: 'user', userId: 'other' });
+      if (failure === 'identity') setSession({ ...admin, userId: 'other-admin' });
       if (failure === 'session') localStorage.removeItem('writespace_session');
       return true;
     });
+    if (failure === 'read') {
+      const getItem = Storage.prototype.getItem;
+      vi.spyOn(Storage.prototype, 'getItem').mockImplementation(function (key) {
+        if (key === 'writespace_posts') throw new Error('denied');
+        return getItem.call(this, key);
+      });
+    }
     if (failure === 'write') vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => { throw new Error('quota'); });
     await userEvent.setup().click(screen.getByRole('button', { name: 'Delete Post 6' }));
     expect(screen.getByRole('alert')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Admin dashboard' })).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'Blogs', exact: true })).not.toBeInTheDocument();
+    if (failure === 'read') vi.restoreAllMocks();
     expect(getPosts()).toEqual(failure === 'missing' ? posts.slice(0, 6) : posts);
   });
 });

@@ -27,6 +27,15 @@ test('register → write → reader → edit → delete persists real records an
   await page.goto('/');
   await registerWriter(page);
   await expect(page.getByText('No blogs yet. Be the first to write one!')).toBeVisible();
+  await page.getByRole('navigation', { name: 'Account navigation' })
+    .getByRole('link', { name: 'Write', exact: true }).click();
+  await expect(page).toHaveURL(/\/write$/);
+  await expect(page.getByRole('heading', { level: 1, name: 'Write a blog', exact: true })).toBeVisible();
+  await expect(page.getByLabel('Title', { exact: true })).toHaveValue('');
+  await expect(page.getByLabel('Content', { exact: true })).toHaveValue('');
+  await expect(page.getByRole('button', { name: 'Publish blog' })).toBeVisible();
+  await page.getByRole('link', { name: 'Cancel', exact: true }).click();
+  await expect(page).toHaveURL(/\/blogs$/);
   await page.getByRole('link', { name: 'Write a blog', exact: true }).click();
   const title = 'A browser-local story';
   const content = `First line\n\n  Indented line\n<script>alert(1)</script><img src=x onerror=alert(1)>\n${'words '.repeat(1000)}END`;

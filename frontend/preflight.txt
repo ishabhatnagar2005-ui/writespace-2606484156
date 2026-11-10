@@ -1,0 +1,880 @@
+[
+  {
+    "name": "landing",
+    "accessibility": {
+      "role": "WebArea",
+      "name": "WriteSpace — A quiet place for ideas",
+      "children": [
+        {
+          "role": "link",
+          "name": "Skip to content"
+        },
+        {
+          "role": "link",
+          "name": "WriteSpace home"
+        },
+        {
+          "role": "link",
+          "name": "Features"
+        },
+        {
+          "role": "link",
+          "name": "Log in"
+        },
+        {
+          "role": "link",
+          "name": "Get started"
+        },
+        {
+          "role": "text",
+          "name": "A LITTLE SPACE. A LOT OF POSSIBILITY."
+        },
+        {
+          "role": "heading",
+          "name": "Good ideas deserve a place to grow.",
+          "level": 1
+        },
+        {
+          "role": "text",
+          "name": "A quiet corner for your thoughts, stories, and fresh perspectives. Find your words with WriteSpace."
+        },
+        {
+          "role": "link",
+          "name": "Start writing"
+        },
+        {
+          "role": "link",
+          "name": "Discover recent posts "
+        },
+        {
+          "role": "image",
+          "name": "User avatar"
+        },
+        {
+          "role": "text",
+          "name": "Your next chapter"
+        },
+        {
+          "role": "text",
+          "name": "It starts with a thought."
+        },
+        {
+          "role": "text",
+          "name": "A blank page, ready when you are. Illustration only."
+        },
+        {
+          "role": "text",
+          "name": "LESS NOISE, MORE MEANING"
+        },
+        {
+          "role": "heading",
+          "name": "Just you and your words.",
+          "level": 2
+        },
+        {
+          "role": "heading",
+          "name": "Make room for your ideas",
+          "level": 3
+        },
+        {
+          "role": "text",
+          "name": "A simple title and a blank page. Write at your own pace, then return to refine your words."
+        },
+        {
+          "role": "heading",
+          "name": "Read a little deeper",
+          "level": 3
+        },
+        {
+          "role": "text",
+          "name": "Discover recent notes and open a post to enjoy the complete story, without the noise."
+        },
+        {
+          "role": "heading",
+          "name": "Keep it close",
+          "level": 3
+        },
+        {
+          "role": "text",
+          "name": "Your posts and demo accounts live in this browser. No feeds, no tracking, no shared server."
+        },
+        {
+          "role": "text",
+          "name": "FROM THIS BROWSER"
+        },
+        {
+          "role": "heading",
+          "name": "Latest posts",
+          "level": 2
+        },
+        {
+          "role": "link",
+          "name": "View all blogs "
+        },
+        {
+          "role": "text",
+          "name": "No posts yet — check back soon!"
+        },
+        {
+          "role": "heading",
+          "name": "Your next story starts here.",
+          "level": 2
+        },
+        {
+          "role": "text",
+          "name": "Bring a thought. Give it a little space."
+        },
+        {
+          "role": "link",
+          "name": "Start writing"
+        },
+        {
+          "role": "text",
+          "name": "WriteSpace"
+        },
+        {
+          "role": "text",
+          "name": "Browser-local demo only. Passwords are stored in plaintext in this browser. Never use real credentials or sensitive information."
+        },
+        {
+          "role": "text",
+          "name": "Posts, accounts, and sessions are not shared across browsers or devices. Client-side role checks are not secure authorization."
+        }
+      ]
+    },
+    "styles": {
+      "font": "\"Segoe UI\", Candara, \"Trebuchet MS\", sans-serif",
+      "background": "rgb(250, 249, 246)",
+      "width": 1024,
+      "viewport": 1024
+    },
+    "html": "<!DOCTYPE html><html lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\" content=\"WriteSpace — a quiet place for ideas. A browser-local blogging demo for reading and writing.\">\n    <meta name=\"theme-color\" content=\"#faf9f6\">\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">\n    <title>WriteSpace — A quiet place for ideas</title>\n    <script type=\"module\" crossorigin=\"\" src=\"/assets/index-B56DcjXh.js\"></script>\n    <link rel=\"stylesheet\" crossorigin=\"\" href=\"/assets/index-C2mvdhYL.css\">\n  </head>\n  <body>\n    <div id=\"root\"><header class=\"border-b border-border\"><a href=\"#main-content\" class=\"sr-only focus:not-sr-only focus:absolute focus:z-10 focus:bg-surface focus:p-4\">Skip to content</a><div class=\"page-container flex min-h-20 flex-wrap items-center justify-between gap-4 py-4\"><a aria-label=\"WriteSpace home\" class=\"flex items-center gap-3 font-display text-xl\" href=\"/\"><span role=\"img\" aria-label=\"User avatar\" class=\"inline-flex shrink-0 items-center justify-center rounded-md bg-avatar-user-bg text-avatar-user h-8 w-8\"><svg viewBox=\"0 0 24 24\" class=\"h-5 w-5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Z\"></path><path d=\"M12 5v15\"></path></svg></span><span>WriteSpace</span></a><button type=\"button\" aria-label=\"Open navigation\" aria-controls=\"public-navigation\" aria-expanded=\"false\" class=\"flex h-11 w-11 items-center justify-center rounded border border-border sm:hidden\"><svg viewBox=\"0 0 24 24\" class=\"h-6 w-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" d=\"M4 6h16M4 12h16M4 18h16\"></path></svg></button><nav id=\"public-navigation\" aria-label=\"Public navigation\" class=\"hidden w-full flex-col gap-4 sm:flex sm:w-auto sm:flex-row sm:items-center sm:gap-8\"><a class=\"text-link py-2\" href=\"/#features\">Features</a><a class=\"text-link py-2\" href=\"/login\">Log in</a><a class=\"button-secondary\" href=\"/register\">Get started</a></nav></div></header><main id=\"main-content\"><section class=\"page-container grid items-center gap-12 py-16 lg:grid-cols-[1.3fr_1fr] lg:gap-16 lg:py-24\" aria-labelledby=\"hero-title\"><div><p class=\"mb-6 text-xs font-medium uppercase tracking-widest text-foreground-muted\">A little space. A lot of possibility.</p><h1 id=\"hero-title\" class=\"max-w-xl text-4xl tracking-tight sm:text-5xl\">Good ideas deserve a place to grow.</h1><p class=\"mb-8 mt-6 max-w-lg text-lg text-foreground-muted\">A quiet corner for your thoughts, stories, and fresh perspectives. Find your words with WriteSpace.</p><div class=\"flex flex-wrap items-center gap-6\"><a class=\"button-primary\" href=\"/register\">Start writing</a><a class=\"text-link text-sm\" href=\"#latest-posts\">Discover recent posts <span aria-hidden=\"true\">↓</span></a></div></div><figure class=\"rounded-md border border-border bg-surface p-8 motion-safe:animate-float motion-reduce:animate-none\" aria-label=\"A blank page illustration\"><div class=\"mb-8 flex items-center gap-3 text-sm text-foreground-muted\"><span role=\"img\" aria-label=\"User avatar\" class=\"inline-flex shrink-0 items-center justify-center rounded-md bg-avatar-user-bg text-avatar-user h-10 w-10\"><svg viewBox=\"0 0 24 24\" class=\"h-5 w-5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Z\"></path><path d=\"M12 5v15\"></path></svg></span><span>Your next chapter</span></div><p class=\"font-display text-2xl\">It starts with a thought.</p><div class=\"my-8 space-y-4\" aria-hidden=\"true\"><div class=\"h-px w-full bg-border\"></div><div class=\"h-px w-full bg-border\"></div><div class=\"h-px w-3/4 bg-border\"></div></div><figcaption class=\"text-xs text-foreground-muted\">A blank page, ready when you are. Illustration only.</figcaption></figure></section><section id=\"features\" class=\"page-container py-16\" aria-labelledby=\"features-title\"><p class=\"mb-4 text-xs uppercase tracking-widest text-foreground-muted\">Less noise, more meaning</p><h2 id=\"features-title\" class=\"mb-10 text-3xl tracking-tight\">Just you and your words.</h2><div class=\"grid gap-10 md:grid-cols-3\"><div><span class=\"text-xs tabular-nums text-foreground-muted\" aria-hidden=\"true\">01</span><h3 class=\"mb-3 mt-4 text-xl\">Make room for your ideas</h3><p class=\"max-w-prose text-sm text-foreground-muted\">A simple title and a blank page. Write at your own pace, then return to refine your words.</p></div><div><span class=\"text-xs tabular-nums text-foreground-muted\" aria-hidden=\"true\">02</span><h3 class=\"mb-3 mt-4 text-xl\">Read a little deeper</h3><p class=\"max-w-prose text-sm text-foreground-muted\">Discover recent notes and open a post to enjoy the complete story, without the noise.</p></div><div><span class=\"text-xs tabular-nums text-foreground-muted\" aria-hidden=\"true\">03</span><h3 class=\"mb-3 mt-4 text-xl\">Keep it close</h3><p class=\"max-w-prose text-sm text-foreground-muted\">Your posts and demo accounts live in this browser. No feeds, no tracking, no shared server.</p></div></div></section><section id=\"latest-posts\" class=\"page-container py-16\" aria-labelledby=\"latest-title\"><div class=\"mb-10 flex flex-wrap items-end justify-between gap-4\"><div><p class=\"mb-4 text-xs uppercase tracking-widest text-foreground-muted\">From this browser</p><h2 id=\"latest-title\" class=\"text-3xl tracking-tight\">Latest posts</h2></div><a class=\"text-link text-sm\" href=\"/blogs\">View all blogs <span aria-hidden=\"true\">→</span></a></div><p class=\"border-y border-border py-10 text-foreground-muted\">No posts yet — check back soon!</p></section><section class=\"page-container py-16 text-center\" aria-labelledby=\"start-title\"><h2 id=\"start-title\" class=\"text-3xl tracking-tight\">Your next story starts here.</h2><p class=\"mb-8 mt-4 text-foreground-muted\">Bring a thought. Give it a little space.</p><a class=\"button-primary\" href=\"/register\">Start writing</a></section></main><footer class=\"mt-8 border-t border-border py-8\"><div class=\"page-container flex flex-col justify-between gap-6 sm:flex-row\"><p class=\"font-display text-xl\">WriteSpace</p><div class=\"max-w-prose text-sm text-foreground-muted\"><p>Browser-local demo only. Passwords are stored in plaintext in this browser. Never use real credentials or sensitive information.</p><p class=\"mt-2\">Posts, accounts, and sessions are not shared across browsers or devices. Client-side role checks are not secure authorization.</p></div></div></footer></div>\n  \n\n</body></html>"
+  },
+  {
+    "name": "login",
+    "accessibility": {
+      "role": "WebArea",
+      "name": "Log in · WriteSpace",
+      "children": [
+        {
+          "role": "link",
+          "name": "Skip to content"
+        },
+        {
+          "role": "link",
+          "name": "WriteSpace home"
+        },
+        {
+          "role": "button",
+          "name": "Close navigation",
+          "expanded": true,
+          "focused": true
+        },
+        {
+          "role": "link",
+          "name": "Features"
+        },
+        {
+          "role": "link",
+          "name": "Log in"
+        },
+        {
+          "role": "link",
+          "name": "Get started"
+        },
+        {
+          "role": "heading",
+          "name": "Welcome back.",
+          "level": 1
+        },
+        {
+          "role": "text",
+          "name": "Log in to your browser-local WriteSpace account."
+        },
+        {
+          "role": "text",
+          "name": "Username"
+        },
+        {
+          "role": "textbox",
+          "name": "Username",
+          "required": true
+        },
+        {
+          "role": "text",
+          "name": "Password"
+        },
+        {
+          "role": "textbox",
+          "name": "Password",
+          "required": true
+        },
+        {
+          "role": "button",
+          "name": "Log in"
+        },
+        {
+          "role": "text",
+          "name": "New here? "
+        },
+        {
+          "role": "link",
+          "name": "Create an account"
+        },
+        {
+          "role": "text",
+          "name": "Demo Admin: username "
+        },
+        {
+          "role": "text",
+          "name": "admin"
+        },
+        {
+          "role": "text",
+          "name": ", password "
+        },
+        {
+          "role": "text",
+          "name": "admin"
+        },
+        {
+          "role": "text",
+          "name": "."
+        },
+        {
+          "role": "text",
+          "name": "Browser-local demo only. Passwords are stored in plaintext in localStorage. Never use real credentials or sensitive information."
+        },
+        {
+          "role": "text",
+          "name": "Client-side role checks are not secure authorization. Accounts and sessions are not shared across browsers or devices."
+        }
+      ]
+    },
+    "styles": {
+      "font": "\"Segoe UI\", Candara, \"Trebuchet MS\", sans-serif",
+      "background": "rgb(250, 249, 246)",
+      "width": 390,
+      "viewport": 390
+    },
+    "html": "<!DOCTYPE html><html lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\" content=\"WriteSpace — a quiet place for ideas. A browser-local blogging demo for reading and writing.\">\n    <meta name=\"theme-color\" content=\"#faf9f6\">\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">\n    <title>Log in · WriteSpace</title>\n    <script type=\"module\" crossorigin=\"\" src=\"/assets/index-B56DcjXh.js\"></script>\n    <link rel=\"stylesheet\" crossorigin=\"\" href=\"/assets/index-C2mvdhYL.css\">\n  </head>\n  <body>\n    <div id=\"root\"><header class=\"border-b border-border\"><a href=\"#main-content\" class=\"sr-only focus:not-sr-only focus:absolute focus:z-10 focus:bg-surface focus:p-4\">Skip to content</a><div class=\"page-container flex min-h-20 flex-wrap items-center justify-between gap-4 py-4\"><a aria-label=\"WriteSpace home\" class=\"flex items-center gap-3 font-display text-xl\" href=\"/\"><span role=\"img\" aria-label=\"User avatar\" class=\"inline-flex shrink-0 items-center justify-center rounded-md bg-avatar-user-bg text-avatar-user h-8 w-8\"><svg viewBox=\"0 0 24 24\" class=\"h-5 w-5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Z\"></path><path d=\"M12 5v15\"></path></svg></span><span>WriteSpace</span></a><button type=\"button\" aria-label=\"Close navigation\" aria-controls=\"public-navigation\" aria-expanded=\"true\" class=\"flex h-11 w-11 items-center justify-center rounded border border-border sm:hidden\"><svg viewBox=\"0 0 24 24\" class=\"h-6 w-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" d=\"m6 6 12 12M6 18 18 6\"></path></svg></button><nav id=\"public-navigation\" aria-label=\"Public navigation\" class=\"flex w-full flex-col gap-4 sm:flex sm:w-auto sm:flex-row sm:items-center sm:gap-8\"><a class=\"text-link py-2\" href=\"/#features\">Features</a><a class=\"text-link py-2\" href=\"/login\">Log in</a><a class=\"button-secondary\" href=\"/register\">Get started</a></nav></div></header><main id=\"main-content\" class=\"page-container py-16 sm:py-24\"><div class=\"mx-auto max-w-md\"><h1 class=\"text-3xl\">Welcome back.</h1><p class=\"mb-8 mt-4 text-foreground-muted\">Log in to your browser-local WriteSpace account.</p><form novalidate=\"\" class=\"space-y-6\"><div><label for=\"login-username\" class=\"mb-2 block font-medium\">Username</label><input id=\"login-username\" name=\"username\" autocomplete=\"username\" required=\"\" aria-required=\"true\" class=\"w-full\" aria-invalid=\"false\" value=\"\"></div><div><label for=\"login-password\" class=\"mb-2 block font-medium\">Password</label><input id=\"login-password\" name=\"password\" type=\"password\" autocomplete=\"current-password\" required=\"\" aria-required=\"true\" class=\"w-full\" aria-invalid=\"false\" value=\"\"></div><button type=\"submit\" class=\"button-primary w-full\">Log in</button></form><p class=\"mt-6 text-sm\">New here? <a class=\"text-link\" href=\"/register\">Create an account</a></p><aside class=\"mt-10 border-t border-border pt-6 text-sm text-foreground-muted\" aria-label=\"Demo account warning\"><p>Demo Admin: username <strong>admin</strong>, password <strong>admin</strong>.</p><p class=\"mt-3\">Browser-local demo only. Passwords are stored in plaintext in localStorage. Never use real credentials or sensitive information.</p><p class=\"mt-3\">Client-side role checks are not secure authorization. Accounts and sessions are not shared across browsers or devices.</p></aside></div></main></div>\n  \n\n</body></html>"
+  },
+  {
+    "name": "register",
+    "accessibility": {
+      "role": "WebArea",
+      "name": "WriteSpace — A quiet place for ideas",
+      "children": [
+        {
+          "role": "link",
+          "name": "Skip to content"
+        },
+        {
+          "role": "link",
+          "name": "WriteSpace home"
+        },
+        {
+          "role": "link",
+          "name": "Features"
+        },
+        {
+          "role": "link",
+          "name": "Log in"
+        },
+        {
+          "role": "link",
+          "name": "Get started"
+        },
+        {
+          "role": "heading",
+          "name": "Make space for your words.",
+          "level": 1
+        },
+        {
+          "role": "text",
+          "name": "Create a demo account in this browser."
+        },
+        {
+          "role": "text",
+          "name": "Display Name"
+        },
+        {
+          "role": "textbox",
+          "name": "Display Name",
+          "required": true
+        },
+        {
+          "role": "text",
+          "name": "Username"
+        },
+        {
+          "role": "textbox",
+          "name": "Username",
+          "required": true
+        },
+        {
+          "role": "text",
+          "name": "Password"
+        },
+        {
+          "role": "textbox",
+          "name": "Password",
+          "required": true
+        },
+        {
+          "role": "text",
+          "name": "Confirm Password"
+        },
+        {
+          "role": "textbox",
+          "name": "Confirm Password",
+          "required": true
+        },
+        {
+          "role": "button",
+          "name": "Create account"
+        },
+        {
+          "role": "text",
+          "name": "Already have an account? "
+        },
+        {
+          "role": "link",
+          "name": "Log in"
+        },
+        {
+          "role": "text",
+          "name": "Browser-local demo only. Passwords are stored in plaintext in localStorage. Never use real credentials or sensitive information."
+        },
+        {
+          "role": "text",
+          "name": "Client-side role checks are not secure authorization. Accounts and sessions are not shared across browsers or devices."
+        }
+      ]
+    },
+    "styles": {
+      "font": "\"Segoe UI\", Candara, \"Trebuchet MS\", sans-serif",
+      "background": "rgb(250, 249, 246)",
+      "width": 768,
+      "viewport": 768
+    },
+    "html": "<!DOCTYPE html><html lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\" content=\"WriteSpace — a quiet place for ideas. A browser-local blogging demo for reading and writing.\">\n    <meta name=\"theme-color\" content=\"#faf9f6\">\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">\n    <title>Create an account · WriteSpace</title>\n    <script type=\"module\" crossorigin=\"\" src=\"/assets/index-B56DcjXh.js\"></script>\n    <link rel=\"stylesheet\" crossorigin=\"\" href=\"/assets/index-C2mvdhYL.css\">\n  </head>\n  <body>\n    <div id=\"root\"><header class=\"border-b border-border\"><a href=\"#main-content\" class=\"sr-only focus:not-sr-only focus:absolute focus:z-10 focus:bg-surface focus:p-4\">Skip to content</a><div class=\"page-container flex min-h-20 flex-wrap items-center justify-between gap-4 py-4\"><a aria-label=\"WriteSpace home\" class=\"flex items-center gap-3 font-display text-xl\" href=\"/\"><span role=\"img\" aria-label=\"User avatar\" class=\"inline-flex shrink-0 items-center justify-center rounded-md bg-avatar-user-bg text-avatar-user h-8 w-8\"><svg viewBox=\"0 0 24 24\" class=\"h-5 w-5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Z\"></path><path d=\"M12 5v15\"></path></svg></span><span>WriteSpace</span></a><button type=\"button\" aria-label=\"Open navigation\" aria-controls=\"public-navigation\" aria-expanded=\"false\" class=\"flex h-11 w-11 items-center justify-center rounded border border-border sm:hidden\"><svg viewBox=\"0 0 24 24\" class=\"h-6 w-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" d=\"M4 6h16M4 12h16M4 18h16\"></path></svg></button><nav id=\"public-navigation\" aria-label=\"Public navigation\" class=\"hidden w-full flex-col gap-4 sm:flex sm:w-auto sm:flex-row sm:items-center sm:gap-8\"><a class=\"text-link py-2\" href=\"/#features\">Features</a><a class=\"text-link py-2\" href=\"/login\">Log in</a><a class=\"button-secondary\" href=\"/register\">Get started</a></nav></div></header><main id=\"main-content\" class=\"page-container py-16 sm:py-24\"><div class=\"mx-auto max-w-md\"><h1 class=\"text-3xl\">Make space for your words.</h1><p class=\"mb-8 mt-4 text-foreground-muted\">Create a demo account in this browser.</p><form novalidate=\"\" class=\"space-y-6\"><div><label for=\"register-displayName\" class=\"mb-2 block font-medium\">Display Name</label><input id=\"register-displayName\" name=\"displayName\" type=\"text\" autocomplete=\"nickname\" required=\"\" aria-required=\"true\" class=\"w-full \" aria-invalid=\"false\" value=\"\"></div><div><label for=\"register-username\" class=\"mb-2 block font-medium\">Username</label><input id=\"register-username\" name=\"username\" type=\"text\" autocomplete=\"username\" required=\"\" aria-required=\"true\" class=\"w-full \" aria-invalid=\"false\" value=\"\"></div><div><label for=\"register-password\" class=\"mb-2 block font-medium\">Password</label><input id=\"register-password\" name=\"password\" type=\"password\" autocomplete=\"new-password\" required=\"\" aria-required=\"true\" class=\"w-full \" aria-invalid=\"false\" value=\"\"></div><div><label for=\"register-confirmPassword\" class=\"mb-2 block font-medium\">Confirm Password</label><input id=\"register-confirmPassword\" name=\"confirmPassword\" type=\"password\" autocomplete=\"new-password\" required=\"\" aria-required=\"true\" class=\"w-full \" aria-invalid=\"false\" value=\"\"></div><button type=\"submit\" class=\"button-primary w-full\">Create account</button></form><p class=\"mt-6 text-sm\">Already have an account? <a class=\"text-link\" href=\"/login\">Log in</a></p><aside class=\"mt-10 border-t border-border pt-6 text-sm text-foreground-muted\" aria-label=\"Demo account warning\"><p>Browser-local demo only. Passwords are stored in plaintext in localStorage. Never use real credentials or sensitive information.</p><p class=\"mt-3\">Client-side role checks are not secure authorization. Accounts and sessions are not shared across browsers or devices.</p></aside></div></main></div>\n  \n\n</body></html>"
+  },
+  {
+    "name": "blogs",
+    "accessibility": {
+      "role": "WebArea",
+      "name": "WriteSpace — A quiet place for ideas",
+      "children": [
+        {
+          "role": "link",
+          "name": "Skip to content"
+        },
+        {
+          "role": "link",
+          "name": "WriteSpace home"
+        },
+        {
+          "role": "link",
+          "name": "Dashboard"
+        },
+        {
+          "role": "link",
+          "name": "Blogs"
+        },
+        {
+          "role": "link",
+          "name": "Write"
+        },
+        {
+          "role": "link",
+          "name": "Users"
+        },
+        {
+          "role": "image",
+          "name": "Admin avatar"
+        },
+        {
+          "role": "text",
+          "name": "Admin"
+        },
+        {
+          "role": "text",
+          "name": "@"
+        },
+        {
+          "role": "text",
+          "name": "admin"
+        },
+        {
+          "role": "text",
+          "name": " · "
+        },
+        {
+          "role": "text",
+          "name": "Admin"
+        },
+        {
+          "role": "button",
+          "name": "Log out"
+        },
+        {
+          "role": "text",
+          "name": "FROM THIS BROWSER"
+        },
+        {
+          "role": "heading",
+          "name": "Blogs",
+          "level": 1
+        },
+        {
+          "role": "text",
+          "name": "Find your next read, "
+        },
+        {
+          "role": "text",
+          "name": "Admin"
+        },
+        {
+          "role": "text",
+          "name": "."
+        },
+        {
+          "role": "link",
+          "name": "Write a blog"
+        },
+        {
+          "role": "text",
+          "name": "No blogs yet. Be the first to write one!"
+        }
+      ]
+    },
+    "styles": {
+      "font": "\"Segoe UI\", Candara, \"Trebuchet MS\", sans-serif",
+      "width": 768,
+      "viewport": 768
+    },
+    "html": "<!DOCTYPE html><html lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\" content=\"WriteSpace — a quiet place for ideas. A browser-local blogging demo for reading and writing.\">\n    <meta name=\"theme-color\" content=\"#faf9f6\">\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">\n    <title>WriteSpace — A quiet place for ideas</title>\n    <script type=\"module\" crossorigin=\"\" src=\"/assets/index-B56DcjXh.js\"></script>\n    <link rel=\"stylesheet\" crossorigin=\"\" href=\"/assets/index-C2mvdhYL.css\">\n  </head>\n  <body>\n    <div id=\"root\"><header class=\"border-b border-border\"><a href=\"#main-content\" class=\"sr-only focus:not-sr-only focus:absolute focus:z-10 focus:bg-surface focus:p-4\">Skip to content</a><div class=\"page-container flex min-h-20 flex-wrap items-center justify-between gap-4 py-4\"><a aria-label=\"WriteSpace home\" class=\"font-display text-xl\" href=\"/\">WriteSpace</a><button type=\"button\" aria-label=\"Open navigation\" aria-controls=\"account-navigation\" aria-expanded=\"false\" class=\"flex h-11 w-11 items-center justify-center rounded border border-border sm:hidden\"><svg viewBox=\"0 0 24 24\" class=\"h-6 w-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" d=\"M4 6h16M4 12h16M4 18h16\"></path></svg></button><nav id=\"account-navigation\" aria-label=\"Account navigation\" class=\"hidden w-full flex-col gap-4 sm:flex sm:w-auto sm:flex-row sm:items-center sm:gap-6\"><a class=\"text-link rounded px-2 py-2 \" href=\"/admin\">Dashboard</a><a aria-current=\"page\" class=\"text-link rounded px-2 py-2 bg-surface-raised font-semibold\" href=\"/blogs\">Blogs</a><a class=\"text-link rounded px-2 py-2 \" href=\"/write\">Write</a><a class=\"text-link rounded px-2 py-2 \" href=\"/users\">Users</a><div class=\"flex min-w-0 items-center gap-3\"><span role=\"img\" aria-label=\"Admin avatar\" class=\"inline-flex shrink-0 items-center justify-center rounded-md bg-avatar-admin-bg text-avatar-admin h-8 w-8\"><svg viewBox=\"0 0 24 24\" class=\"h-5 w-5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m3 6 4 4 5-6 5 6 4-4-2 12H5L3 6Zm3 15h12\"></path></svg></span><div class=\"min-w-0 text-sm\"><p class=\"break-words font-medium\">Admin</p><p class=\"break-words text-xs text-foreground-muted\">@admin · Admin</p></div></div><button type=\"button\" class=\"button-secondary\">Log out</button></nav></div></header><main id=\"main-content\" class=\"page-container py-16 lg:py-24\"><header class=\"mb-10 flex flex-wrap items-end justify-between gap-6\"><div><p class=\"mb-4 text-xs uppercase tracking-widest text-foreground-muted\">From this browser</p><h1 class=\"text-4xl tracking-tight\">Blogs</h1><p class=\"mt-4 break-words text-foreground-muted\">Find your next read, Admin.</p></div><a class=\"button-primary\" href=\"/write\">Write a blog</a></header><p class=\"border-y border-border py-10 text-foreground-muted\">No blogs yet. Be the first to write one!</p></main></div>\n  \n\n</body></html>"
+  },
+  {
+    "name": "write",
+    "accessibility": {
+      "role": "WebArea",
+      "name": "WriteSpace — A quiet place for ideas",
+      "children": [
+        {
+          "role": "link",
+          "name": "Skip to content"
+        },
+        {
+          "role": "link",
+          "name": "WriteSpace home"
+        },
+        {
+          "role": "link",
+          "name": "Dashboard"
+        },
+        {
+          "role": "link",
+          "name": "Blogs"
+        },
+        {
+          "role": "link",
+          "name": "Write"
+        },
+        {
+          "role": "link",
+          "name": "Users"
+        },
+        {
+          "role": "image",
+          "name": "Admin avatar"
+        },
+        {
+          "role": "text",
+          "name": "Admin"
+        },
+        {
+          "role": "text",
+          "name": "@"
+        },
+        {
+          "role": "text",
+          "name": "admin"
+        },
+        {
+          "role": "text",
+          "name": " · "
+        },
+        {
+          "role": "text",
+          "name": "Admin"
+        },
+        {
+          "role": "button",
+          "name": "Log out"
+        },
+        {
+          "role": "heading",
+          "name": "Write a blog",
+          "level": 1
+        },
+        {
+          "role": "text",
+          "name": "Your words, saved in this browser. Never include sensitive information."
+        },
+        {
+          "role": "text",
+          "name": "Title"
+        },
+        {
+          "role": "textbox",
+          "name": "Title",
+          "required": true
+        },
+        {
+          "role": "text",
+          "name": "Content"
+        },
+        {
+          "role": "textbox",
+          "name": "Content",
+          "description": "0 characters",
+          "multiline": true,
+          "required": true
+        },
+        {
+          "role": "text",
+          "name": "0"
+        },
+        {
+          "role": "text",
+          "name": " characters"
+        },
+        {
+          "role": "button",
+          "name": "Publish blog"
+        },
+        {
+          "role": "link",
+          "name": "Cancel"
+        }
+      ]
+    },
+    "styles": {
+      "font": "\"Segoe UI\", Candara, \"Trebuchet MS\", sans-serif",
+      "width": 768,
+      "viewport": 768
+    },
+    "html": "<!DOCTYPE html><html lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\" content=\"WriteSpace — a quiet place for ideas. A browser-local blogging demo for reading and writing.\">\n    <meta name=\"theme-color\" content=\"#faf9f6\">\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">\n    <title>Write a blog · WriteSpace</title>\n    <script type=\"module\" crossorigin=\"\" src=\"/assets/index-B56DcjXh.js\"></script>\n    <link rel=\"stylesheet\" crossorigin=\"\" href=\"/assets/index-C2mvdhYL.css\">\n  </head>\n  <body>\n    <div id=\"root\"><header class=\"border-b border-border\"><a href=\"#main-content\" class=\"sr-only focus:not-sr-only focus:absolute focus:z-10 focus:bg-surface focus:p-4\">Skip to content</a><div class=\"page-container flex min-h-20 flex-wrap items-center justify-between gap-4 py-4\"><a aria-label=\"WriteSpace home\" class=\"font-display text-xl\" href=\"/\">WriteSpace</a><button type=\"button\" aria-label=\"Open navigation\" aria-controls=\"account-navigation\" aria-expanded=\"false\" class=\"flex h-11 w-11 items-center justify-center rounded border border-border sm:hidden\"><svg viewBox=\"0 0 24 24\" class=\"h-6 w-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" d=\"M4 6h16M4 12h16M4 18h16\"></path></svg></button><nav id=\"account-navigation\" aria-label=\"Account navigation\" class=\"hidden w-full flex-col gap-4 sm:flex sm:w-auto sm:flex-row sm:items-center sm:gap-6\"><a class=\"text-link rounded px-2 py-2 \" href=\"/admin\">Dashboard</a><a class=\"text-link rounded px-2 py-2 \" href=\"/blogs\">Blogs</a><a aria-current=\"page\" class=\"text-link rounded px-2 py-2 bg-surface-raised font-semibold\" href=\"/write\">Write</a><a class=\"text-link rounded px-2 py-2 \" href=\"/users\">Users</a><div class=\"flex min-w-0 items-center gap-3\"><span role=\"img\" aria-label=\"Admin avatar\" class=\"inline-flex shrink-0 items-center justify-center rounded-md bg-avatar-admin-bg text-avatar-admin h-8 w-8\"><svg viewBox=\"0 0 24 24\" class=\"h-5 w-5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m3 6 4 4 5-6 5 6 4-4-2 12H5L3 6Zm3 15h12\"></path></svg></span><div class=\"min-w-0 text-sm\"><p class=\"break-words font-medium\">Admin</p><p class=\"break-words text-xs text-foreground-muted\">@admin · Admin</p></div></div><button type=\"button\" class=\"button-secondary\">Log out</button></nav></div></header><main id=\"main-content\" class=\"page-container py-16 lg:py-24\"><div class=\"mx-auto max-w-prose\"><header class=\"mb-10\"><h1 class=\"text-4xl tracking-tight\">Write a blog</h1><p class=\"mt-4 text-foreground-muted\">Your words, saved in this browser. Never include sensitive information.</p></header><form novalidate=\"\" class=\"space-y-6\"><div><label for=\"blog-title\" class=\"mb-2 block font-medium\">Title</label><input id=\"blog-title\" name=\"title\" type=\"text\" required=\"\" aria-required=\"true\" class=\"w-full \" aria-invalid=\"false\" value=\"\"></div><div><label for=\"blog-content\" class=\"mb-2 block font-medium\">Content</label><textarea id=\"blog-content\" name=\"content\" required=\"\" aria-required=\"true\" class=\"min-h-64 w-full resize-y \" aria-invalid=\"false\" aria-describedby=\"blog-counter\"></textarea><p id=\"blog-counter\" class=\"mt-2 text-sm tabular-nums text-foreground-muted\">0 characters</p></div><div class=\"flex flex-wrap gap-4\"><button type=\"submit\" class=\"button-primary\">Publish blog</button><a class=\"button-secondary\" href=\"/blogs\">Cancel</a></div></form></div></main></div>\n  \n\n</body></html>"
+  },
+  {
+    "name": "admin",
+    "accessibility": {
+      "role": "WebArea",
+      "name": "WriteSpace — A quiet place for ideas",
+      "children": [
+        {
+          "role": "link",
+          "name": "Skip to content"
+        },
+        {
+          "role": "link",
+          "name": "WriteSpace home"
+        },
+        {
+          "role": "link",
+          "name": "Dashboard"
+        },
+        {
+          "role": "link",
+          "name": "Blogs"
+        },
+        {
+          "role": "link",
+          "name": "Write"
+        },
+        {
+          "role": "link",
+          "name": "Users"
+        },
+        {
+          "role": "image",
+          "name": "Admin avatar"
+        },
+        {
+          "role": "text",
+          "name": "Admin"
+        },
+        {
+          "role": "text",
+          "name": "@"
+        },
+        {
+          "role": "text",
+          "name": "admin"
+        },
+        {
+          "role": "text",
+          "name": " · "
+        },
+        {
+          "role": "text",
+          "name": "Admin"
+        },
+        {
+          "role": "button",
+          "name": "Log out"
+        },
+        {
+          "role": "heading",
+          "name": "Admin dashboard",
+          "level": 1
+        },
+        {
+          "role": "text",
+          "name": "An overview of this browser’s WriteSpace."
+        },
+        {
+          "role": "text",
+          "name": "Total posts"
+        },
+        {
+          "role": "text",
+          "name": "0"
+        },
+        {
+          "role": "text",
+          "name": "Total users"
+        },
+        {
+          "role": "text",
+          "name": "1"
+        },
+        {
+          "role": "text",
+          "name": "Admins"
+        },
+        {
+          "role": "text",
+          "name": "1"
+        },
+        {
+          "role": "text",
+          "name": "Your posts"
+        },
+        {
+          "role": "text",
+          "name": "0"
+        },
+        {
+          "role": "link",
+          "name": "Write a blog"
+        },
+        {
+          "role": "link",
+          "name": "Manage accounts"
+        },
+        {
+          "role": "heading",
+          "name": "Recent posts",
+          "level": 2
+        },
+        {
+          "role": "text",
+          "name": "No posts yet."
+        }
+      ]
+    },
+    "styles": {
+      "font": "\"Segoe UI\", Candara, \"Trebuchet MS\", sans-serif",
+      "width": 768,
+      "viewport": 768
+    },
+    "html": "<!DOCTYPE html><html lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\" content=\"WriteSpace — a quiet place for ideas. A browser-local blogging demo for reading and writing.\">\n    <meta name=\"theme-color\" content=\"#faf9f6\">\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">\n    <title>WriteSpace — A quiet place for ideas</title>\n    <script type=\"module\" crossorigin=\"\" src=\"/assets/index-B56DcjXh.js\"></script>\n    <link rel=\"stylesheet\" crossorigin=\"\" href=\"/assets/index-C2mvdhYL.css\">\n  </head>\n  <body>\n    <div id=\"root\"><header class=\"border-b border-border\"><a href=\"#main-content\" class=\"sr-only focus:not-sr-only focus:absolute focus:z-10 focus:bg-surface focus:p-4\">Skip to content</a><div class=\"page-container flex min-h-20 flex-wrap items-center justify-between gap-4 py-4\"><a aria-label=\"WriteSpace home\" class=\"font-display text-xl\" href=\"/\">WriteSpace</a><button type=\"button\" aria-label=\"Open navigation\" aria-controls=\"account-navigation\" aria-expanded=\"false\" class=\"flex h-11 w-11 items-center justify-center rounded border border-border sm:hidden\"><svg viewBox=\"0 0 24 24\" class=\"h-6 w-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" d=\"M4 6h16M4 12h16M4 18h16\"></path></svg></button><nav id=\"account-navigation\" aria-label=\"Account navigation\" class=\"hidden w-full flex-col gap-4 sm:flex sm:w-auto sm:flex-row sm:items-center sm:gap-6\"><a aria-current=\"page\" class=\"text-link rounded px-2 py-2 bg-surface-raised font-semibold\" href=\"/admin\">Dashboard</a><a class=\"text-link rounded px-2 py-2 \" href=\"/blogs\">Blogs</a><a class=\"text-link rounded px-2 py-2 \" href=\"/write\">Write</a><a class=\"text-link rounded px-2 py-2 \" href=\"/users\">Users</a><div class=\"flex min-w-0 items-center gap-3\"><span role=\"img\" aria-label=\"Admin avatar\" class=\"inline-flex shrink-0 items-center justify-center rounded-md bg-avatar-admin-bg text-avatar-admin h-8 w-8\"><svg viewBox=\"0 0 24 24\" class=\"h-5 w-5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m3 6 4 4 5-6 5 6 4-4-2 12H5L3 6Zm3 15h12\"></path></svg></span><div class=\"min-w-0 text-sm\"><p class=\"break-words font-medium\">Admin</p><p class=\"break-words text-xs text-foreground-muted\">@admin · Admin</p></div></div><button type=\"button\" class=\"button-secondary\">Log out</button></nav></div></header><main id=\"main-content\" class=\"page-container py-16 lg:py-24\"><h1 class=\"text-4xl\">Admin dashboard</h1><p class=\"mt-4 text-foreground-muted\">An overview of this browser’s WriteSpace.</p><dl aria-label=\"Statistics\" class=\"mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4\"><div class=\"rounded border border-border bg-surface p-6\"><dt class=\"text-sm text-foreground-muted\">Total posts</dt><dd class=\"mt-3 font-mono text-3xl tabular-nums\">0</dd></div><div class=\"rounded border border-border bg-surface p-6\"><dt class=\"text-sm text-foreground-muted\">Total users</dt><dd class=\"mt-3 font-mono text-3xl tabular-nums\">1</dd></div><div class=\"rounded border border-border bg-surface p-6\"><dt class=\"text-sm text-foreground-muted\">Admins</dt><dd class=\"mt-3 font-mono text-3xl tabular-nums\">1</dd></div><div class=\"rounded border border-border bg-surface p-6\"><dt class=\"text-sm text-foreground-muted\">Your posts</dt><dd class=\"mt-3 font-mono text-3xl tabular-nums\">0</dd></div></dl><nav aria-label=\"Quick actions\" class=\"my-12 flex flex-wrap gap-4\"><a class=\"button-primary\" href=\"/write\">Write a blog</a><a class=\"button-secondary\" href=\"/users\">Manage accounts</a></nav><section aria-labelledby=\"recent-heading\"><h2 id=\"recent-heading\" class=\"text-2xl\">Recent posts</h2><p class=\"mt-6 text-foreground-muted\">No posts yet.</p></section></main></div>\n  \n\n</body></html>"
+  },
+  {
+    "name": "users",
+    "accessibility": {
+      "role": "WebArea",
+      "name": "WriteSpace — A quiet place for ideas",
+      "children": [
+        {
+          "role": "link",
+          "name": "Skip to content"
+        },
+        {
+          "role": "link",
+          "name": "WriteSpace home"
+        },
+        {
+          "role": "link",
+          "name": "Dashboard"
+        },
+        {
+          "role": "link",
+          "name": "Blogs"
+        },
+        {
+          "role": "link",
+          "name": "Write"
+        },
+        {
+          "role": "link",
+          "name": "Users"
+        },
+        {
+          "role": "image",
+          "name": "Admin avatar"
+        },
+        {
+          "role": "text",
+          "name": "Admin"
+        },
+        {
+          "role": "text",
+          "name": "@"
+        },
+        {
+          "role": "text",
+          "name": "admin"
+        },
+        {
+          "role": "text",
+          "name": " · "
+        },
+        {
+          "role": "text",
+          "name": "Admin"
+        },
+        {
+          "role": "button",
+          "name": "Log out"
+        },
+        {
+          "role": "link",
+          "name": "Back to dashboard"
+        },
+        {
+          "role": "heading",
+          "name": "Manage accounts",
+          "level": 1
+        },
+        {
+          "role": "text",
+          "name": "Demo only: passwords are stored as plaintext in this browser. Never use real credentials or sensitive information."
+        },
+        {
+          "role": "heading",
+          "name": "Create account",
+          "level": 2
+        },
+        {
+          "role": "text",
+          "name": "Display Name"
+        },
+        {
+          "role": "textbox",
+          "name": "Display Name",
+          "required": true
+        },
+        {
+          "role": "text",
+          "name": "Username"
+        },
+        {
+          "role": "textbox",
+          "name": "Username",
+          "required": true
+        },
+        {
+          "role": "text",
+          "name": "Password"
+        },
+        {
+          "role": "textbox",
+          "name": "Password",
+          "required": true
+        },
+        {
+          "role": "text",
+          "name": "Role"
+        },
+        {
+          "role": "combobox",
+          "name": "Role",
+          "haspopup": "menu",
+          "children": [
+            {
+              "role": "option",
+              "name": "Choose a role",
+              "selected": true
+            },
+            {
+              "role": "option",
+              "name": "User"
+            },
+            {
+              "role": "option",
+              "name": "Admin"
+            }
+          ],
+          "value": "Choose a role"
+        },
+        {
+          "role": "button",
+          "name": "Create account"
+        },
+        {
+          "role": "heading",
+          "name": "Built-in Admin",
+          "level": 2
+        },
+        {
+          "role": "image",
+          "name": "Admin avatar"
+        },
+        {
+          "role": "text",
+          "name": "Admin"
+        },
+        {
+          "role": "text",
+          "name": "@"
+        },
+        {
+          "role": "text",
+          "name": "admin"
+        },
+        {
+          "role": "text",
+          "name": "Admin"
+        },
+        {
+          "role": "text",
+          "name": "Permanent built-in account"
+        },
+        {
+          "role": "button",
+          "name": "Delete account admin",
+          "disabled": true
+        },
+        {
+          "role": "heading",
+          "name": "Stored accounts",
+          "level": 2
+        },
+        {
+          "role": "text",
+          "name": "No stored accounts yet."
+        }
+      ]
+    },
+    "styles": {
+      "font": "\"Segoe UI\", Candara, \"Trebuchet MS\", sans-serif",
+      "width": 768,
+      "viewport": 768
+    },
+    "html": "<!DOCTYPE html><html lang=\"en\"><head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\" content=\"WriteSpace — a quiet place for ideas. A browser-local blogging demo for reading and writing.\">\n    <meta name=\"theme-color\" content=\"#faf9f6\">\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\">\n    <title>WriteSpace — A quiet place for ideas</title>\n    <script type=\"module\" crossorigin=\"\" src=\"/assets/index-B56DcjXh.js\"></script>\n    <link rel=\"stylesheet\" crossorigin=\"\" href=\"/assets/index-C2mvdhYL.css\">\n  </head>\n  <body>\n    <div id=\"root\"><header class=\"border-b border-border\"><a href=\"#main-content\" class=\"sr-only focus:not-sr-only focus:absolute focus:z-10 focus:bg-surface focus:p-4\">Skip to content</a><div class=\"page-container flex min-h-20 flex-wrap items-center justify-between gap-4 py-4\"><a aria-label=\"WriteSpace home\" class=\"font-display text-xl\" href=\"/\">WriteSpace</a><button type=\"button\" aria-label=\"Open navigation\" aria-controls=\"account-navigation\" aria-expanded=\"false\" class=\"flex h-11 w-11 items-center justify-center rounded border border-border sm:hidden\"><svg viewBox=\"0 0 24 24\" class=\"h-6 w-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" d=\"M4 6h16M4 12h16M4 18h16\"></path></svg></button><nav id=\"account-navigation\" aria-label=\"Account navigation\" class=\"hidden w-full flex-col gap-4 sm:flex sm:w-auto sm:flex-row sm:items-center sm:gap-6\"><a class=\"text-link rounded px-2 py-2 \" href=\"/admin\">Dashboard</a><a class=\"text-link rounded px-2 py-2 \" href=\"/blogs\">Blogs</a><a class=\"text-link rounded px-2 py-2 \" href=\"/write\">Write</a><a aria-current=\"page\" class=\"text-link rounded px-2 py-2 bg-surface-raised font-semibold\" href=\"/users\">Users</a><div class=\"flex min-w-0 items-center gap-3\"><span role=\"img\" aria-label=\"Admin avatar\" class=\"inline-flex shrink-0 items-center justify-center rounded-md bg-avatar-admin-bg text-avatar-admin h-8 w-8\"><svg viewBox=\"0 0 24 24\" class=\"h-5 w-5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m3 6 4 4 5-6 5 6 4-4-2 12H5L3 6Zm3 15h12\"></path></svg></span><div class=\"min-w-0 text-sm\"><p class=\"break-words font-medium\">Admin</p><p class=\"break-words text-xs text-foreground-muted\">@admin · Admin</p></div></div><button type=\"button\" class=\"button-secondary\">Log out</button></nav></div></header><main id=\"main-content\" class=\"page-container py-16 lg:py-24\"><a class=\"text-link\" href=\"/admin\">Back to dashboard</a><h1 class=\"mt-6 text-4xl\">Manage accounts</h1><p class=\"mt-4 text-sm text-foreground-muted\">Demo only: passwords are stored as plaintext in this browser. Never use real credentials or sensitive information.</p><section aria-labelledby=\"create-heading\" class=\"mt-12\"><h2 id=\"create-heading\" class=\"text-2xl\">Create account</h2><form novalidate=\"\" class=\"mt-6 grid gap-6 sm:grid-cols-2\"><div class=\"min-w-0\"><label for=\"account-displayName\" class=\"mb-2 block font-medium\">Display Name</label><input id=\"account-displayName\" type=\"text\" required=\"\" aria-required=\"true\" aria-invalid=\"false\" autocomplete=\"off\" class=\"w-full\" value=\"\"></div><div class=\"min-w-0\"><label for=\"account-username\" class=\"mb-2 block font-medium\">Username</label><input id=\"account-username\" type=\"text\" required=\"\" aria-required=\"true\" aria-invalid=\"false\" autocomplete=\"off\" class=\"w-full\" value=\"\"></div><div class=\"min-w-0\"><label for=\"account-password\" class=\"mb-2 block font-medium\">Password</label><input id=\"account-password\" type=\"password\" required=\"\" aria-required=\"true\" aria-invalid=\"false\" autocomplete=\"new-password\" class=\"w-full\" value=\"\"></div><div class=\"min-w-0\"><label for=\"account-role\" class=\"mb-2 block font-medium\">Role</label><select id=\"account-role\" required=\"\" aria-required=\"true\" aria-invalid=\"false\" class=\"w-full\"><option value=\"\">Choose a role</option><option value=\"user\">User</option><option value=\"admin\">Admin</option></select></div><div class=\"sm:col-span-2\"><button type=\"submit\" class=\"button-primary\">Create account</button></div></form></section><section aria-labelledby=\"permanent-heading\" class=\"mt-12\"><h2 id=\"permanent-heading\" class=\"text-2xl\">Built-in Admin</h2><ul><li aria-label=\"Account admin\" class=\"flex flex-col gap-4 border-b border-border py-6 sm:flex-row sm:items-center\"><div class=\"flex min-w-0 flex-1 items-center gap-3\"><span role=\"img\" aria-label=\"Admin avatar\" class=\"inline-flex shrink-0 items-center justify-center rounded-md bg-avatar-admin-bg text-avatar-admin h-8 w-8\"><svg viewBox=\"0 0 24 24\" class=\"h-5 w-5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m3 6 4 4 5-6 5 6 4-4-2 12H5L3 6Zm3 15h12\"></path></svg></span><div class=\"min-w-0\"><p class=\"break-words font-medium\">Admin</p><p class=\"break-all text-sm text-foreground-muted\">@admin</p></div></div><div class=\"text-sm text-foreground-muted sm:w-48\"><p>Admin</p><p>Permanent built-in account</p></div><button type=\"button\" class=\"button-secondary text-error disabled:cursor-not-allowed disabled:opacity-50\" aria-label=\"Delete account admin\" disabled=\"\">Delete</button></li></ul></section><section aria-labelledby=\"stored-heading\" class=\"mt-12\"><h2 id=\"stored-heading\" class=\"text-2xl\">Stored accounts</h2><p class=\"mt-6 text-foreground-muted\">No stored accounts yet.</p></section></main></div>\n  \n\n</body></html>"
+  }
+]
