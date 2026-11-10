@@ -41,8 +41,8 @@ test('guest discovers real local previews without passive mutations', async ({ p
   await expect(page.getByText('Real local story 4')).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath('guest-desktop.png'), fullPage: true });
   await page.getByRole('link', { name: 'Read Browser note 4' }).click();
-  await expect(page).toHaveURL(/\/blog\/local-4$/);
-  // The account slice owns redirect/form assertions; this slice verifies the real link.
+  await expect(page).toHaveURL(/\/login$/);
+  await expect(page.getByRole('heading', { name: 'Welcome back.' })).toBeVisible();
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('writespace_posts')))).toEqual(posts);
   expect(errors).toEqual([]);
 });
