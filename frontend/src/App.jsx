@@ -9,6 +9,7 @@ import LoginPage from './pages/LoginPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
 import Home from './pages/Home.jsx';
 import ReadBlog from './pages/ReadBlog.jsx';
+import WriteBlog from './pages/WriteBlog.jsx';
 import { getSession } from './utils/auth.js';
 
 /** Render the existing unknown-address content without inventing protected pages. */
@@ -68,7 +69,7 @@ export default function App() {
             path={path}
             element={
               <ProtectedRoute session={session}>
-                <RouteFallback />
+                <WriteBlog session={session} />
               </ProtectedRoute>
             }
           />
